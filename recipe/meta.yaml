@@ -1,4 +1,4 @@
-{% set version = '1.18-1' %}
+{% set version = "1.20-1" %}
 {% set native = 'm2w64-' if win else '' %}
 
 package:
@@ -10,11 +10,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/dtw_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/dtw/dtw_{{ version }}.tar.gz
-  sha256: d9dab25bdf61705f9f28dc5ca1c96a7465b269233e878516c52c01b5a0da21ad
+  sha256: 43ca1a47a7c81a2b5d5054da1be8b8af79a85d6f9ce7b4512e9ed91f790f60f0
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
