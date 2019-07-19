@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -41,6 +41,7 @@ test:
 about:
   home: http://dtw.r-forge.r-project.org/
   license: GPL-2
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
   summary: A comprehensive implementation of dynamic time warping (DTW) algorithms in R.  DTW
     computes the optimal (least cumulative distance) alignment between points of two
     time series.  Common DTW variants covered include local (slope) and global (window)
@@ -51,8 +52,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - dpryan79
-    - bgruening
-    - daler
-    - johanneskoester
+    - conda-forge/r
     - rvalieris
