@@ -1,4 +1,4 @@
-{% set version = "1.23-1" %}
+{% set version = "1.23-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dtw_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dtw/dtw_{{ version }}.tar.gz
-  sha256: 6ed6a3b52be673ce2617b8d48723c7c488c95aab88fe2912d7e00507838e826d
+  sha256: ee9054a50693f460655d76bd89006945bcb90e6e875b00551b5ecc883d02edd9
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,8 +47,8 @@ about:
   doc_url: https://dynamictimewarping.github.io
   license: GPL-2.0-only
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
-  summary: A comprehensive implementation of dynamic time warping (DTW) algorithms in R.  DTW computes the optimal (least cumulative distance) alignment between points of two time series.  Common DTW variants covered include local (slope) and global (window) constraints, subsequence matches, arbitrary distance definitions,
-    normalizations, minimum variance matching, and so on.  Provides cumulative distances, alignments, specialized plot styles, etc.
+  summary: A comprehensive implementation of dynamic time warping (DTW) algorithms in R.  DTW computes the optimal (least cumulative distance) alignment between points of two time series.  Common DTW variants covered include local (slope) and global (window) constraints, subsequence matches, arbitrary distance 
+    definitions, normalizations, minimum variance matching, and so on.  Provides cumulative distances, alignments, specialized plot styles, etc.
   license_family: GPL
 
 extra:
