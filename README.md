@@ -9,7 +9,7 @@ About r-dtw
 
 Home: http://dtw.r-forge.r-project.org/
 
-Package license: GPL-2.0-only
+Package license: GPL-2.0-or-later
 
 Summary: A comprehensive implementation of dynamic time warping (DTW) algorithms in R.  DTW computes the optimal (least cumulative distance) alignment between points of two time series.  Common DTW variants covered include local (slope) and global (window) constraints, subsequence matches, arbitrary distance definitions, normalizations, minimum variance matching, and so on.  Provides cumulative distances, alignments, specialized plot styles, etc.
 
@@ -20,7 +20,7 @@ About r-dtw
 
 Home: http://dtw.r-forge.r-project.org/
 
-Package license: GPL-2.0-only
+Package license: GPL-2.0-or-later
 
 Summary: A comprehensive implementation of dynamic time warping (DTW) algorithms in R.  DTW computes the optimal (least cumulative distance) alignment between points of two time series.  Common DTW variants covered include local (slope) and global (window) constraints, subsequence matches, arbitrary distance definitions, normalizations, minimum variance matching, and so on.  Provides cumulative distances, alignments, specialized plot styles, etc.
 
