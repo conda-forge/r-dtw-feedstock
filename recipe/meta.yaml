@@ -1,15 +1,15 @@
-{% set version = "1.23-2" %}
+{% set version = "1.23-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-dtw
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/dtw_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dtw/dtw_{{ version }}.tar.gz
-  sha256: ee9054a50693f460655d76bd89006945bcb90e6e875b00551b5ecc883d02edd9
+  sha256: 7e0e725b2897ffc623f3ad296619edf17877462f3d7ca8f9b5168ae6d834e786
 
 build:
   number: 0
